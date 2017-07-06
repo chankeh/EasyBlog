@@ -1,1 +1,2 @@
-﻿laravel学习代码（包括代码分析、注释）之上的小萌博客源码
+﻿# EasyBlog
+用PHP+Laravel制作的简易博客
