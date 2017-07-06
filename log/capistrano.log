@@ -1,0 +1,217 @@
+# Logfile created on 2016-11-05 15:35:02 +0800 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-05 15:35:02 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d178bf5f] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [d178bf5f] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-05 16:29:45 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f7d61cdb] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [f7d61cdb] Command: /usr/bin/env mkdir -p /tmp
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-05 16:36:45 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [0ba96d6a] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [0ba96d6a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [0ba96d6a] Finished in 23.574 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [558714c7] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [558714c7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [558714c7] Finished in 0.863 seconds with exit status 0 (successful).
+  INFO [d4e2d395] Running /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [d4e2d395] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git )
+ DEBUG [d4e2d395] 	error: The requested URL returned error: 401 while accessing https://grayguest@bitbucket.org/grayguest/mengblog.git/info/refs
+
+ DEBUG [d4e2d395] 	fatal: HTTP request failed
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-05 17:04:54 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [175fd7f1] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [175fd7f1] Command: /usr/bin/env mkdir -p /tmp
+  INFO [175fd7f1] Finished in 8.311 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [957e36ca] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [957e36ca] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [957e36ca] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [ff329d90] Running /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [ff329d90] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git )
+ DEBUG [ff329d90] 	fatal: Unable to find remote helper for 'https'
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-06 11:58:27 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ea030180] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [ea030180] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ea030180] Finished in 10.121 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [4cf51752] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [4cf51752] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [4cf51752] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [15fe1606] Running /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [15fe1606] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git )
+ DEBUG [15fe1606] 	remote: Invalid username or password. If you log in via a third party service you must ensure you have an account password set in your account profile.
+ DEBUG [15fe1606] 	f
+ DEBUG [15fe1606] 	atal: 
+ DEBUG [15fe1606] 	A
+ DEBUG [15fe1606] 	uthentication failed for '
+ DEBUG [15fe1606] 	h
+ DEBUG [15fe1606] 	ttps://grayguest@bitbucket.org/grayguest/mengblog.git/
+ DEBUG [15fe1606] 	'
+ DEBUG [15fe1606] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-06 12:06:44 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [99bd23b3] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [99bd23b3] Command: /usr/bin/env mkdir -p /tmp
+  INFO [99bd23b3] Finished in 7.319 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [54f48dae] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [54f48dae] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [54f48dae] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [7e05b69a] Running /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [7e05b69a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads https://grayguest@bitbucket.org/grayguest/mengblog.git )
+ DEBUG [7e05b69a] 	remote: Invalid username or password. If you log in via a third party service you must ensure you have an account password set in your account profile.
+ DEBUG [7e05b69a] 	f
+ DEBUG [7e05b69a] 	atal: 
+ DEBUG [7e05b69a] 	A
+ DEBUG [7e05b69a] 	uthentication failed for '
+ DEBUG [7e05b69a] 	h
+ DEBUG [7e05b69a] 	ttps://grayguest@bitbucket.org/grayguest/mengblog.git/
+ DEBUG [7e05b69a] 	'
+ DEBUG [7e05b69a] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-06 12:08:05 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [99ca8519] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [99ca8519] Command: /usr/bin/env mkdir -p /tmp
+  INFO [99ca8519] Finished in 10.374 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [3a46b44c] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [3a46b44c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [3a46b44c] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO [ce1a567e] Running /usr/bin/env git ls-remote --heads git@bitbucket.org:grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [ce1a567e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads git@bitbucket.org:grayguest/mengblog.git )
+ DEBUG [ce1a567e] 	Error reading response length from authentication socket.
+ DEBUG [ce1a567e] 	ec67fc2883753f79d3b88004f68115c8fa9f15e6	refs/heads/master
+  INFO [ce1a567e] Finished in 1.599 seconds with exit status 0 (successful).
+  INFO [1397ac12] Running /usr/bin/env mkdir -p /home/deploy/apps/mengblog/shared /home/deploy/apps/mengblog/releases as deploy@192.243.117.132
+ DEBUG [1397ac12] Command: /usr/bin/env mkdir -p /home/deploy/apps/mengblog/shared /home/deploy/apps/mengblog/releases
+  INFO [1397ac12] Finished in 0.363 seconds with exit status 0 (successful).
+ DEBUG [3ce41c4d] Running [ -f /home/deploy/apps/mengblog/current/REVISION ] as deploy@192.243.117.132
+ DEBUG [3ce41c4d] Command: [ -f /home/deploy/apps/mengblog/current/REVISION ]
+ DEBUG [3ce41c4d] Finished in 0.363 seconds with exit status 1 (failed).
+ DEBUG [fc051de7] Running [ -f /home/deploy/apps/mengblog/repo/HEAD ] as deploy@192.243.117.132
+ DEBUG [fc051de7] Command: [ -f /home/deploy/apps/mengblog/repo/HEAD ]
+ DEBUG [fc051de7] Finished in 0.353 seconds with exit status 1 (failed).
+ DEBUG [c91253a9] Running if test ! -d /home/deploy/apps/mengblog; then echo "Directory does not exist '/home/deploy/apps/mengblog'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [c91253a9] Command: if test ! -d /home/deploy/apps/mengblog; then echo "Directory does not exist '/home/deploy/apps/mengblog'" 1>&2; false; fi
+ DEBUG [c91253a9] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [e4426a2a] Running /usr/bin/env git clone --mirror git@bitbucket.org:grayguest/mengblog.git /home/deploy/apps/mengblog/repo as deploy@192.243.117.132
+ DEBUG [e4426a2a] Command: cd /home/deploy/apps/mengblog && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git clone --mirror git@bitbucket.org:grayguest/mengblog.git /home/deploy/apps/mengblog/repo )
+ DEBUG [e4426a2a] 	Cloning into bare repository '/home/deploy/apps/mengblog/repo'...
+ DEBUG [e4426a2a] 	Error reading response length from authentication socket.
+  INFO [e4426a2a] Finished in 1.621 seconds with exit status 0 (successful).
+ DEBUG [7dd88149] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [7dd88149] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [7dd88149] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO [e9b395e3] Running /usr/bin/env git remote update --prune as deploy@192.243.117.132
+ DEBUG [e9b395e3] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [e9b395e3] 	Fetching origin
+ DEBUG [e9b395e3] 	Error reading response length from authentication socket.
+  INFO [e9b395e3] Finished in 1.600 seconds with exit status 0 (successful).
+ DEBUG [ca9889b9] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [ca9889b9] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [ca9889b9] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO [f06f3449] Running /usr/bin/env mkdir -p /home/deploy/apps/mengblog/releases/20161106040851 as deploy@192.243.117.132
+ DEBUG [f06f3449] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mengblog/releases/20161106040851 )
+  INFO [f06f3449] Finished in 0.365 seconds with exit status 0 (successful).
+  INFO [bf037132] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/mengblog/releases/20161106040851 as deploy@192.243.117.132
+ DEBUG [bf037132] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/mengblog/releases/20161106040851 )
+  INFO [bf037132] Finished in 0.363 seconds with exit status 0 (successful).
+ DEBUG [0c616f4e] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [0c616f4e] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [0c616f4e] Finished in 0.353 seconds with exit status 0 (successful).
+ DEBUG [b7328d94] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.243.117.132
+ DEBUG [b7328d94] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b7328d94] 	ec67fc2883753f79d3b88004f68115c8fa9f15e6
+ DEBUG [b7328d94] Finished in 0.364 seconds with exit status 0 (successful).
+ DEBUG [4774ca38] Running if test ! -d /home/deploy/apps/mengblog/releases/20161106040851; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106040851'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [4774ca38] Command: if test ! -d /home/deploy/apps/mengblog/releases/20161106040851; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106040851'" 1>&2; false; fi
+ DEBUG [4774ca38] Finished in 0.353 seconds with exit status 0 (successful).
+  INFO [663cf83b] Running /usr/bin/env echo "ec67fc2883753f79d3b88004f68115c8fa9f15e6" >> REVISION as deploy@192.243.117.132
+ DEBUG [663cf83b] Command: cd /home/deploy/apps/mengblog/releases/20161106040851 && /usr/bin/env echo "ec67fc2883753f79d3b88004f68115c8fa9f15e6" >> REVISION
+  INFO [663cf83b] Finished in 0.363 seconds with exit status 0 (successful).
+ DEBUG [b79e31d3] Running if test ! -d /home/deploy/apps/mengblog/releases/20161106040851; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106040851'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [b79e31d3] Command: if test ! -d /home/deploy/apps/mengblog/releases/20161106040851; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106040851'" 1>&2; false; fi
+ DEBUG [b79e31d3] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [cef62be0] Running /usr/bin/env composer install --no-dev --quiet as deploy@192.243.117.132
+ DEBUG [cef62be0] Command: cd /home/deploy/apps/mengblog/releases/20161106040851 && /usr/bin/env composer install --no-dev --quiet
+ DEBUG [cef62be0] 	/usr/bin/env: 
+ DEBUG [cef62be0] 	composer
+ DEBUG [cef62be0] 	: No such file or directory
+ DEBUG [cef62be0] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-11-06 14:12:13 +0800 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [eedefb01] Running /usr/bin/env mkdir -p /tmp as deploy@192.243.117.132
+ DEBUG [eedefb01] Command: /usr/bin/env mkdir -p /tmp
+  INFO [eedefb01] Finished in 7.883 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-mengblog-production-User.sh 0.0%
+  INFO Uploading /tmp/git-ssh-mengblog-production-User.sh 100.0%
+  INFO [145b4651] Running /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh as deploy@192.243.117.132
+ DEBUG [145b4651] Command: /usr/bin/env chmod 700 /tmp/git-ssh-mengblog-production-User.sh
+  INFO [145b4651] Finished in 0.355 seconds with exit status 0 (successful).
+  INFO [51f2706a] Running /usr/bin/env git ls-remote --heads git@bitbucket.org:grayguest/mengblog.git as deploy@192.243.117.132
+ DEBUG [51f2706a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git ls-remote --heads git@bitbucket.org:grayguest/mengblog.git )
+ DEBUG [51f2706a] 	Warning: Permanently added the RSA host key for IP address '2401:1d80:1010::151' to the list of known hosts.
+ DEBUG [51f2706a] 	Error reading response length from authentication socket.
+ DEBUG [51f2706a] 	ec67fc2883753f79d3b88004f68115c8fa9f15e6	refs/heads/master
+  INFO [51f2706a] Finished in 1.613 seconds with exit status 0 (successful).
+  INFO [bcd0ff98] Running /usr/bin/env mkdir -p /home/deploy/apps/mengblog/shared /home/deploy/apps/mengblog/releases as deploy@192.243.117.132
+ DEBUG [bcd0ff98] Command: /usr/bin/env mkdir -p /home/deploy/apps/mengblog/shared /home/deploy/apps/mengblog/releases
+  INFO [bcd0ff98] Finished in 0.358 seconds with exit status 0 (successful).
+ DEBUG [046a97c4] Running [ -f /home/deploy/apps/mengblog/current/REVISION ] as deploy@192.243.117.132
+ DEBUG [046a97c4] Command: [ -f /home/deploy/apps/mengblog/current/REVISION ]
+ DEBUG [046a97c4] Finished in 0.355 seconds with exit status 1 (failed).
+ DEBUG [f7852e19] Running [ -f /home/deploy/apps/mengblog/repo/HEAD ] as deploy@192.243.117.132
+ DEBUG [f7852e19] Command: [ -f /home/deploy/apps/mengblog/repo/HEAD ]
+ DEBUG [f7852e19] Finished in 0.352 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/apps/mengblog/repo
+ DEBUG [4e9bceb1] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [4e9bceb1] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [4e9bceb1] Finished in 0.356 seconds with exit status 0 (successful).
+  INFO [2cda1203] Running /usr/bin/env git remote update --prune as deploy@192.243.117.132
+ DEBUG [2cda1203] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [2cda1203] 	Fetching origin
+ DEBUG [2cda1203] 	Error reading response length from authentication socket.
+  INFO [2cda1203] Finished in 1.559 seconds with exit status 0 (successful).
+ DEBUG [e9284b59] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [e9284b59] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [e9284b59] Finished in 0.367 seconds with exit status 0 (successful).
+  INFO [331f64c6] Running /usr/bin/env mkdir -p /home/deploy/apps/mengblog/releases/20161106061230 as deploy@192.243.117.132
+ DEBUG [331f64c6] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env mkdir -p /home/deploy/apps/mengblog/releases/20161106061230 )
+  INFO [331f64c6] Finished in 0.373 seconds with exit status 0 (successful).
+  INFO [ebf71e9c] Running /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/mengblog/releases/20161106061230 as deploy@192.243.117.132
+ DEBUG [ebf71e9c] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git archive master | tar -x -f - -C /home/deploy/apps/mengblog/releases/20161106061230 )
+  INFO [ebf71e9c] Finished in 0.366 seconds with exit status 0 (successful).
+ DEBUG [1094a06e] Running if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [1094a06e] Command: if test ! -d /home/deploy/apps/mengblog/repo; then echo "Directory does not exist '/home/deploy/apps/mengblog/repo'" 1>&2; false; fi
+ DEBUG [1094a06e] Finished in 0.353 seconds with exit status 0 (successful).
+ DEBUG [0c180c4d] Running /usr/bin/env git rev-list --max-count=1 master as deploy@192.243.117.132
+ DEBUG [0c180c4d] Command: cd /home/deploy/apps/mengblog/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-mengblog-production-User.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [0c180c4d] 	ec67fc2883753f79d3b88004f68115c8fa9f15e6
+ DEBUG [0c180c4d] Finished in 0.368 seconds with exit status 0 (successful).
+ DEBUG [bf841903] Running if test ! -d /home/deploy/apps/mengblog/releases/20161106061230; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106061230'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [bf841903] Command: if test ! -d /home/deploy/apps/mengblog/releases/20161106061230; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106061230'" 1>&2; false; fi
+ DEBUG [bf841903] Finished in 0.359 seconds with exit status 0 (successful).
+  INFO [21d0b53d] Running /usr/bin/env echo "ec67fc2883753f79d3b88004f68115c8fa9f15e6" >> REVISION as deploy@192.243.117.132
+ DEBUG [21d0b53d] Command: cd /home/deploy/apps/mengblog/releases/20161106061230 && /usr/bin/env echo "ec67fc2883753f79d3b88004f68115c8fa9f15e6" >> REVISION
+  INFO [21d0b53d] Finished in 0.363 seconds with exit status 0 (successful).
+ DEBUG [a9c45142] Running if test ! -d /home/deploy/apps/mengblog/releases/20161106061230; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106061230'" 1>&2; false; fi as deploy@192.243.117.132
+ DEBUG [a9c45142] Command: if test ! -d /home/deploy/apps/mengblog/releases/20161106061230; then echo "Directory does not exist '/home/deploy/apps/mengblog/releases/20161106061230'" 1>&2; false; fi
+ DEBUG [a9c45142] Finished in 0.364 seconds with exit status 0 (successful).

@@ -1,0 +1,45 @@
+.comment-title {
+    margin-bottom: 45px;
+}
+
+.comment-title>span {
+    margin-right: 15px;
+}
+
+.comment {
+    margin-bottom: 45px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #5882B4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+.author-name {
+    float: left;
+    margin-left: 15px;
+}
+
+.author-name>h4 {
+    margin: 5px 0px;
+}
+
+.author-name>p {
+    font-size: 11px;
+    font-style: italic;
+    color: #aaa;
+}
+
+.comment-content {
+    clear: both;
+    margin-left: 64px;
+    font-size: 16px;
+    line-height: 1.3em;
+}
