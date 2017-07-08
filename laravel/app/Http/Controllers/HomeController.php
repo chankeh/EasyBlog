@@ -9,6 +9,7 @@ use Request as RequestFacade; //嘿嘿 by xiaopo
 use App\Post;
 use Mail;
 use Session;
+use App\Tag;
 
 class HomeController extends Controller
 {
@@ -45,21 +46,32 @@ class HomeController extends Controller
         static $orderByInPublicHomePage; //这种方法也不行。
         switch(RequestFacade::input('orderBy')){
             case 'Recent':
-                $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+                $posts = Post::orderBy('created_at', 'desc')->paginate(5);
                 break;
             case 'Commented':
-                $posts = Post::orderBy('comment_count', 'desc')->paginate(10);
+                $posts = Post::orderBy('comment_count', 'desc')->paginate(5);
                 break;
             case 'Visited':
-                $posts = Post::orderBy('visit_count', 'desc')->paginate(10);
+                $posts = Post::orderBy('visit_count', 'desc')->paginate(5);
                 break;
             default:
-                $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+                $posts = Post::orderBy('created_at', 'desc')->paginate(5);
         }
+
+        //获取所有目录
+
+        //获取所有标签
+        $tags = Tag::all();
+
+        //评论最多的前十篇博客文章
+        $postCommented10  = Post::orderBy('comment_count', 'desc')->take(10)->get();
+
 
         $data = array(
             'posts' => $posts,
             'orderBy' => RequestFacade::input('orderBy'),
+            'tags' => $tags,
+            'postCommented10' => $postCommented10,
         );
         return view('home/homePage', $data);
     }

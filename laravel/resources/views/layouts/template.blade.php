@@ -4,8 +4,8 @@
     @include('partials/_head')
 </head>
 <body>
-    @section('body_content')
-    @show
+@section('body_content')
+@show
 </body>
 @include('partials/_javascript')
 </html>

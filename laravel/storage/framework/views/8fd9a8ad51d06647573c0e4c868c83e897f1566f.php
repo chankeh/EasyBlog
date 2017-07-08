@@ -12,7 +12,7 @@
         <div class="col-md-8 col-md-offset-2">
             <h2 style="word-break:break-all;word-wrap:break-word;"><?php echo e($post->title); ?></h2>
             <h5>Published: <?php echo e(date('M d, Y', strtotime($post->created_at))); ?></h5>
-            <p style="word-break:break-all;word-wrap:break-word;"><?php echo e(mb_substr($post->body, 0, 255)); ?><?php echo e(mb_strlen($post->body) > 255 ? '......' : ''); ?></p>
+            <p style="word-break:break-all;word-wrap:break-word;"><?php echo e(mb_substr(strip_tags($post->body), 0, 255)); ?><?php echo e(mb_strlen(strip_tags($post->body)) > 255 ? '......' : ''); ?></p>
             <a href="<?php echo e(route('blog.single', ['slug' => $post->slug])); ?>" class="btn btn-primary">Read More</a>
             <hr>
         </div>

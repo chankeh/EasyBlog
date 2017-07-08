@@ -62,6 +62,11 @@ class CommentController extends Controller
         $comment->post()->associate($post); // not attach, hiahia    $comment->post_id = $post_id;
         $comment->save();
 
+        //更新博客评论数
+        $post = Post::find($post_id);
+        $post->comment_count =  $post->comment_count + 1;
+        $post->save();
+
         Session::flash('success', 'Comment was added');
 
         return redirect()->route('blog.single', ['slug' => $post->slug]);

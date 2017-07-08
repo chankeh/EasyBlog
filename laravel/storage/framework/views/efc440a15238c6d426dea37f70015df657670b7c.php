@@ -1,1 +1,1 @@
-<p>&copy; Begin Programming</p>
+<p>&copy;小破 All rights reserved.</p>
