@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="541f5d38-73de-4376-8168-68b1e27c241b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog" afterPath="$PROJECT_DIR$/blog" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crap" afterPath="$PROJECT_DIR$/crap" />
-    </list>
+    <list default="true" id="541f5d38-73de-4376-8168-68b1e27c241b" name="Default" comment="" />
     <ignored path="htdocs.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -10847,7 +10844,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.49577168" order="0" side_tool="false" content_ui="combo" />
