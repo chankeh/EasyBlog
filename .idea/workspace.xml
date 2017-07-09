@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="541f5d38-73de-4376-8168-68b1e27c241b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/laravel/storage/framework/sessions/3c83ef08685baa50de14b27d391cb1a670d0f264" afterPath="$PROJECT_DIR$/laravel/storage/framework/sessions/3c83ef08685baa50de14b27d391cb1a670d0f264" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog" afterPath="$PROJECT_DIR$/blog" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crap" afterPath="$PROJECT_DIR$/crap" />
     </list>
     <ignored path="htdocs.iws" />
     <ignored path=".idea/workspace.xml" />
