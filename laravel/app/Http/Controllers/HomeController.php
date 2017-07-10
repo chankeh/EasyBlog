@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
@@ -58,7 +59,23 @@ class HomeController extends Controller
                 $posts = Post::orderBy('created_at', 'desc')->paginate(5);
         }
 
-        //获取所有目录
+
+         if(null != ($categoryId = RequestFacade::input('categoryId'))) {
+             //dd($category->posts()); //返回为null，因为在PostController中的store和update方法中都没有关联。
+             $posts = Post::where('category_id', '=', $categoryId)->orderBy('created_at', 'desc')->paginate(5);
+         }
+
+        if(null != ($tagId = RequestFacade::input('tagId'))) {
+            $tag = Tag::find($tagId);
+            $posts = $tag->posts()->orderBy('created_at', 'desc')->paginate(5);
+        }
+
+
+        //获取所有目录，及目录下博客文章数
+        $categories = Category::all();
+        foreach ($categories as $category) {
+            $category->count = Post::where('category_id', '=', $category->id)->count();
+        }
 
         //获取所有标签
         $tags = Tag::all();
@@ -68,9 +85,13 @@ class HomeController extends Controller
 
 
         $data = array(
-            'posts' => $posts,
-            'orderBy' => RequestFacade::input('orderBy'),
-            'tags' => $tags,
+            'posts'           => $posts,
+            'orderBy'         => RequestFacade::input('orderBy'),
+            'categoryId'      => RequestFacade::input('categoryId'),
+            'tagId'           => RequestFacade::input('tagId'),
+
+            'categories'      => $categories,
+            'tags'            => $tags,
             'postCommented10' => $postCommented10,
         );
         return view('home/homePage', $data);

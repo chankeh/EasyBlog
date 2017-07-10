@@ -9,12 +9,12 @@
 
 
     <!-- 更新浏览数 -->
-    <form style=""  id="fbCommentCountForm" action="<?php echo e(route('blog.update', ['id'=> $id])); ?>" method="POST" style="display: none;">
+    <form id="fbCommentCountForm" action="<?php echo e(route('blog.update', ['slug' => $post->slug])); ?>" method="POST" style="display: none;">
         <?php echo e(csrf_field()); ?>
 
         <input type="hidden" name="_method" value="PUT">
-        <input type="text" name="visitCount" id="fbFormVisitCount" value="<?php echo e($post->visit_count); ?>" style="display: none;">
-        <input type="submit" name="sbm" value="submit comment count" style="display: none;">
+        <input type="text" name="visitCount" id="fbFormVisitCount" value="<?php echo e($post->visit_count); ?>" >
+        <!-- <input type="submit" name="sbm" value="submit comment count" > !-->
     </form>
 
 
@@ -26,19 +26,20 @@
                 <img src="<?php echo e(URL::asset('images/' . $post->featured_image)); ?>" alt="" width="800px" height="400px">
             <?php endif; ?>
             <h1><?php echo e($post->title); ?></h1> <!-- 注意这两个的区别，原样输出 -->
-            <small><?php echo e(date('Y-n-j G:i', strtotime($post->created_at))); ?>&nbsp;&nbsp;浏览:<?php echo e($post->visit_count); ?>次&nbsp;&nbsp;评论:<?php echo e($post->comments->count()); ?>次</small>
+            <small><?php echo e(date('Y-n-j G:i', strtotime($post->created_at))); ?>&nbsp;&nbsp;浏览:<?php echo e($post->visit_count); ?>次&nbsp;&nbsp;评论:<?php echo e($post->comments->count()); ?>次&nbsp;&nbsp;发布于:<?php echo e($post->category->name); ?></small>
+            <div class="tags">
+                <small>标签:</small>
+                <small>
+                    <?php foreach($post->tags as $tag): ?>
+                        <span class="label label-info"><?php echo e($tag->name); ?></span>
+                    <?php endforeach; ?>
+                </small>
+            </div>
             <br>
             <br>
             <p><?php echo $post->body; ?></p> <!-- 注意这两个的区别 -->
             <br>
             <br>
-            <p>发布于：<?php echo e($post->category->name); ?></p>
-            <div class="tags">
-                标签：
-                <?php foreach($post->tags as $tag): ?>
-                    <span class="label label-default"><?php echo e($tag->name); ?></span>
-                <?php endforeach; ?>
-            </div>
         </div>
 
         <!-- 评论显示 -->
@@ -110,10 +111,11 @@
             var $formVar = $('form');
 
             $.ajax({
-                url: $formVar.prop('<?php echo e(route('blog.update', ['slug' => $post->slug])); ?>'),
-                method: 'PUT',
+                url: $formVar.prop('action'),
+                type: 'PUT',
                 data: $formVar.serialize()
             });
+
         }, 5000); //延迟等待5秒
 
     </script>

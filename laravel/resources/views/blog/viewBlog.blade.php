@@ -11,11 +11,11 @@
 
 
     <!-- 更新浏览数 -->
-    <form style=""  id="fbCommentCountForm" action="{{ route('blog.update', ['id'=> $id]) }}" method="POST" style="display: none;">
+    <form id="fbCommentCountForm" action="{{ route('blog.update', ['slug' => $post->slug]) }}" method="POST" style="display: none;">
         {{ csrf_field() }}
         <input type="hidden" name="_method" value="PUT">
-        <input type="text" name="visitCount" id="fbFormVisitCount" value="{{ $post->visit_count }}" style="display: none;">
-        <input type="submit" name="sbm" value="submit comment count" style="display: none;">
+        <input type="text" name="visitCount" id="fbFormVisitCount" value="{{ $post->visit_count }}" >
+        <!-- <input type="submit" name="sbm" value="submit comment count" > !-->
     </form>
 
 
@@ -27,19 +27,20 @@
                 <img src="{{ URL::asset('images/' . $post->featured_image) }}" alt="" width="800px" height="400px">
             @endif
             <h1>{{ $post->title }}</h1> <!-- 注意这两个的区别，原样输出 -->
-            <small>{{ date('Y-n-j G:i', strtotime($post->created_at)) }}&nbsp;&nbsp;浏览:{{ $post->visit_count }}次&nbsp;&nbsp;评论:{{ $post->comments->count() }}次</small>
+            <small>{{ date('Y-n-j G:i', strtotime($post->created_at)) }}&nbsp;&nbsp;浏览:{{ $post->visit_count }}次&nbsp;&nbsp;评论:{{ $post->comments->count() }}次&nbsp;&nbsp;发布于:{{ $post->category->name }}</small>
+            <div class="tags">
+                <small>标签:</small>
+                <small>
+                    @foreach($post->tags as $tag)
+                        <span class="label label-info">{{ $tag->name }}</span>
+                    @endforeach
+                </small>
+            </div>
             <br>
             <br>
             <p>{!! $post->body !!}</p> <!-- 注意这两个的区别 -->
             <br>
             <br>
-            <p>发布于：{{ $post->category->name }}</p>
-            <div class="tags">
-                标签：
-                @foreach($post->tags as $tag)
-                    <span class="label label-default">{{ $tag->name }}</span>
-                @endforeach
-            </div>
         </div>
 
         <!-- 评论显示 -->
@@ -109,10 +110,11 @@
             var $formVar = $('form');
 
             $.ajax({
-                url: $formVar.prop('{{ route('blog.update', ['slug' => $post->slug]) }}'),
-                method: 'PUT',
+                url: $formVar.prop('action'),
+                type: 'PUT',
                 data: $formVar.serialize()
             });
+
         }, 5000); //延迟等待5秒
 
     </script>

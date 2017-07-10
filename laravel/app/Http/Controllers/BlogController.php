@@ -27,19 +27,17 @@ class BlogController extends Controller
         return view('blog/viewBlog', ['id' => $id, 'post' => $post]);
     }
 
-    //更新评论数、访问数
+    //更新访问数
     public function putUpdate(Request $request, $slug)
     {
         $post = Post::where('slug', '=', $slug)->first(); //其实应该就只有一个
 
-        //更新评论数、访问数
-        if (isset($request->commentCount))
-            $post->comment_count = $request->commentCount;
+        //更新访问数
         if (isset($request->visitCount))
             $post->visit_count = $request->visitCount;
         $post->save();
 
-        return redirect()->route('blog.single', ['slug' => $post->slug]);
+        //return redirect()->route('blog.single', ['slug' => $post->slug]); //防止重复转到页面增加浏览数
     }
 
     public function getSingle($slug)

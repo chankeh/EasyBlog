@@ -96,7 +96,17 @@ Route::group(['middleware' => 'web'], function () {
      * Route::get('/auth/register', 'Auth\AuthController@getRegister'); //getRegister => getRegisterForm 手写认证，如果利用AuthController控制器继承自AuthenticatesAndRegistersUsers trait的方法，名字不能改。
      * Route::post('/auth/register', 'Auth\AuthController@postRegister'); //postRegister => postRegisterData  注意理解上一条和这一条
      */
-    Route::auth();
+    //Route::auth();
+
+    //注册
+    //Route::get('register','Auth\AuthController@showRegistrationForm');
+    //Route::post('register','Auth\AuthController@register');
+    //登录
+    Route::get('login','Auth\AuthController@showLoginForm');
+    Route::post('login','Auth\AuthController@login');
+    //登出
+    Route::post('logout','Auth\AuthController@logout');
+
 
     Route::get('/home', 'HomeController@index');  //默认的Laravel页面
 });

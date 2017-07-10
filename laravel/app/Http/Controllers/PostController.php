@@ -88,9 +88,11 @@ class PostController extends Controller
         $post->title = $request->title;
         $post->slug = $request->slug;
         $post->category_id = $request->category_id;
+        // associate the post with category
+        $category = Category::find($request->category_id);
+        $post->category()->associate($category);
         $post->body = $request->body;
         // save our featured image
-
         if ($request->hasFile('featured_image')) {
             $image = $request->file('featured_image');
             $filename = time() . '.' . $image->getClientOriginalExtension();
@@ -178,8 +180,12 @@ class PostController extends Controller
             $post->title = $request->input("title");
         if (isset($request->slug))
             $post->slug = $request->input("slug");
-        if (isset($request->category_id))
+        if (isset($request->category_id)) {
             $post->category_id = $request->input("category_id");
+            // associate the post with category
+            $category = Category::find($request->category_id);
+            $post->category()->associate($category);
+        }
         if (isset($request->body))
             $post->body = $request->input("body");
         if ($request->hasFile('featured_image')) {
@@ -200,6 +206,7 @@ class PostController extends Controller
 
 
         $post->save();
+
 
         // associate the post with tags
         if (isset($request->tags))

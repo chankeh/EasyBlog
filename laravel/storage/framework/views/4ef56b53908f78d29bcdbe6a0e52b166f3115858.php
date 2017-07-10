@@ -30,12 +30,12 @@
     }
     /*BLUE*/
     ul.blue li a.current, ul.blue li a:hover {
-        background: url("<?php echo e(URL::asset('banner/blue.png')); ?>") no-repeat top right;
+        background: url("<?php echo e((0 == ($rand = mt_rand(0, 2))) ? URL::asset('banner/blue.png') : ($rand == 1 ? URL::asset('banner/green.png') : URL::asset('banner/pink.png'))); ?>") no-repeat top right;
         color: #0d5f83;
     }
 
     ul.blue li a.current span, ul.blue li a:hover span {
-        background: url("<?php echo e(URL::asset('banner/blue.png')); ?>") no-repeat top left;
+        background: url("<?php echo e((0 == $rand) ? URL::asset('banner/blue.png') : ($rand == 1 ? URL::asset('banner/green.png') : URL::asset('banner/pink.png'))); ?>") no-repeat top left;
     }
 </style>
 
