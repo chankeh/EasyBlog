@@ -79,7 +79,7 @@
                         <div class="list-group">
                         <?php foreach( $categories as $category): ?>
                                 <a href="<?php echo e(route('homePage', ['categoryId' => $category->id])); ?>" class="list-group-item" style="border: 0; padding-left: 0;">
-                                    <span class="glyphicon "></span> <?php echo e($category->name); ?> <span class="badge" style="background-color: #5bc0de; margin-right: 73px;"><?php echo e($category->count); ?></span>
+                                    <span class="glyphicon "></span> <?php echo e($category->name); ?> <span class="badge" style="background-color: #5bc0de; margin-right: 37px;"><?php echo e($category->count); ?></span>
                                 </a>
                         <?php endforeach; ?>
                         </div>

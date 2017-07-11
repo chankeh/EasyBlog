@@ -46,8 +46,12 @@ class BlogController extends Controller
         //MySQL to convert a string into a slug
         //LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(TRIM('My String'), ':', ''), ')', ''), '(', ''), ',', ''), '\\', ''), '\/', ''), '\"', ''), '?', ''), '\'', ''), '&', ''), '!', ''), '.', ''), ' ', '-'), '--', '-'), '--', '-')) AS `post_name`
 
-        $post = Post::where('slug', '=', $slug)->get()->first(); //其实应该就只有一个
-        return view('blog/viewBlog', ['id' => $post->id, 'post' => $post]);
+        if (Post::where('slug', '=', $slug)->count()) {
+            $post = Post::where('slug', '=', $slug)->get()->first(); //其实应该就只有一个
+            return view('blog/viewBlog', ['id' => $post->id, 'post' => $post]);
+        }
+        else
+            return view('errors.404');
     }
 
 

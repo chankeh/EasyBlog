@@ -3,7 +3,7 @@
 @section('body_content')
     <div class="container">
         @include('partials/navbar')
-        <h2 style="margin: 15px 0"><a href="http://127.0.0.1/laravel/public/index.php" style="text-decoration: none;color:black;">凤焕亭</a></h2>
+        <h2 style="margin: 15px 0"><a href="/" style="text-decoration: none;color:black;">凤焕亭</a></h2>
 
         @section('content')
         @show

@@ -53,7 +53,7 @@
                             <img src="{{ "https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid" }}" alt="" class="author-image">
                             <div class="author-name">
                                 <h4>{{ $comment->name }}</h4>
-                                <p>{{ date('F nS, Y-g:iA', strtotime($comment->created_at)) }}&nbsp;&nbsp;&nbsp;{{ $comment->updated_at->diffForHumans() }}</p>
+                                <p>{{ date('F nS, Y    g:iA', strtotime($comment->created_at)) }}&nbsp;&nbsp;&nbsp;{{ $comment->updated_at->diffForHumans() }}</p>
                             </div>
                         </div>
                         <div class="comment-content">

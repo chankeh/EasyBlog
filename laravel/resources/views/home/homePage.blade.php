@@ -81,7 +81,7 @@
                         <div class="list-group">
                         @foreach( $categories as $category)
                                 <a href="{{ route('homePage', ['categoryId' => $category->id]) }}" class="list-group-item" style="border: 0; padding-left: 0;">
-                                    <span class="glyphicon "></span> {{ $category->name }} <span class="badge" style="background-color: #5bc0de; margin-right: 73px;">{{ $category->count }}</span>
+                                    <span class="glyphicon "></span> {{ $category->name }} <span class="badge" style="background-color: #5bc0de; margin-right: 37px;">{{ $category->count }}</span>
                                 </a>
                         @endforeach
                         </div>

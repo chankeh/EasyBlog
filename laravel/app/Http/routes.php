@@ -105,7 +105,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('login','Auth\AuthController@showLoginForm');
     Route::post('login','Auth\AuthController@login');
     //登出
-    Route::post('logout','Auth\AuthController@logout');
+    Route::get('logout','Auth\AuthController@logout');
 
 
     Route::get('/home', 'HomeController@index');  //默认的Laravel页面

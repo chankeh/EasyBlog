@@ -41,7 +41,7 @@
 
 
     <ul class="blue">
-        <li><a href="http://127.0.0.1/laravel/public/index.php" class="<?php echo e(Request::is('/') ? 'current' : ''); ?>"><span>主页</span></a></li>
-        <li><a href="http://127.0.0.1/laravel/public/index.php/blog" class="<?php echo e(Request::url() ==  "http://127.0.0.1/laravel/public/index.php/blog" ? 'current' : ''); ?>"><span>博客</span></a></li>
-        <li><a href="http://127.0.0.1/laravel/public/index.php/aboutMe" class="<?php echo e(strpos(Request::url(), '/aboutMe') != FALSE ? 'current' : ''); ?>"><span>关于</span></a></li>
+        <li><a href="/" class="<?php echo e(Request::is('/') ? 'current' : ''); ?>"><span>主页</span></a></li>
+        <li><a href="/blog" class="<?php echo e(Request::url() ==  "http://127.0.0.1/laravel/public/index.php/blog" ? 'current' : ''); ?>"><span>博客</span></a></li>
+        <li><a href="/aboutMe" class="<?php echo e(strpos(Request::url(), '/aboutMe') != FALSE ? 'current' : ''); ?>"><span>关于</span></a></li>
     </ul>

@@ -52,7 +52,7 @@
                             <img src="<?php echo e("https://www.gravatar.com/avatar/" . md5(strtolower(trim($comment->email))) . "?s=50&d=monsterid"); ?>" alt="" class="author-image">
                             <div class="author-name">
                                 <h4><?php echo e($comment->name); ?></h4>
-                                <p><?php echo e(date('F nS, Y-g:iA', strtotime($comment->created_at))); ?>&nbsp;&nbsp;&nbsp;<?php echo e($comment->updated_at->diffForHumans()); ?></p>
+                                <p><?php echo e(date('F nS, Y    g:iA', strtotime($comment->created_at))); ?>&nbsp;&nbsp;&nbsp;<?php echo e($comment->updated_at->diffForHumans()); ?></p>
                             </div>
                         </div>
                         <div class="comment-content">
